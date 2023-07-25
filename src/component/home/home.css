@@ -1,0 +1,193 @@
+.home_content{
+    grid-template-columns: 115px repeat(2,1fr);
+    padding-top: 6rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.home_social{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.home_social-icon{
+    font-size: 1.25rem;
+    color: var(--color);
+}
+
+.home_social-icon:hover{
+    color: var(--title-dark);
+}
+
+.home_title{
+    font-size: var(--big-font);
+    margin-bottom: 5px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_hand{
+    width: 25px;
+    height: 25px;
+    margin-left: 0.4rem;
+}
+.home_subtitle{
+    font-size: 20px;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 4.5rem;
+    font-weight: 400;
+    color: var(--color);
+}
+.home_subtitle::before{
+    content: '';
+    position: absolute;
+    top: 1rem;
+    height: 1px;
+    left: 0;
+    width: 70px;
+    background-color: var(--color);
+}
+
+
+.home_description{
+    margin-bottom: 10px;
+    color: var(--color);
+}
+
+.home_img{
+    background: url(../../asset/ravi1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    box-shadow: inset 0 0 0 9px rgba(27, 27, 27, 0.034);
+    order: 1;
+    justify-self: center;
+    animation: profile_ani 5s ease-in-out infinite 1s;
+}
+
+@keyframes   profile_ani{
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+
+/* button span */
+.button{
+    margin-top: 8px;
+    font-weight: 400;
+}
+.button span{
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+
+
+
+/* breakpoint */
+@media screen and (max-width:992px){
+    .home_content{
+        grid-template-columns: 90px repeat(2,1fr);
+        column-gap: 2rem;
+    }
+    .home_title{
+        font-size: var(--font-t-992);
+    }
+    .home_hand{
+        width: 22px;
+        height: 22px;
+    }
+    .home_subtitle{
+        padding-left: 2rem;
+        font-size:  var(--font-st-992);
+    }
+    .home_subtitle::before{
+        width: 30px;
+     }
+     .home_description{
+        font-size:  var(--font-d-992);
+     }
+
+
+
+     .home_img{
+        width: 250px;
+        height: 250px;
+        box-shadow: inset 0 0 0 5px rgba(27, 27, 27, 0.034);
+     }
+    
+     .button{
+        padding: .5rem  1.75rem;
+     }
+}
+
+/* medium ss */
+/* @media screen and (max-width:768px){
+    .home_content{
+        grid-template-columns: 50px repeat(2,0.5fr);
+        column-gap: 1rem;
+        padding-top: 4rem;
+    }
+    .home_title{
+        font-size: var(--font-t-768);
+    }
+    .home_hand{
+        width: 20px;
+        height: 20px;
+    }
+    .home_subtitle{
+        padding-left: 1.8rem;
+        font-size: var(--font-st-768);
+    }
+    .home_subtitle::before{
+        width: 25px;
+     }
+     .home_description{
+        font-size: var(--font-d-768);
+     }
+
+     .home_img{
+        width: 200px;
+        height: 200px;
+        box-shadow: inset 0 0 0 5px rgba(27, 27, 27, 0.034);
+     }
+} */
+
+
+@media screen and (max-width:768px){
+    
+    .home_content{
+        grid-template-columns: .5fr 3fr;
+        column-gap: 1rem;
+    }
+     .home_img{
+        order: initial;
+        width: 200px;
+        height: 200px;
+        box-shadow: inset 0 0 0 5px rgba(27, 27, 27, 0.034);
+     }
+     .home_data{
+        margin-top: 5px;
+        grid-column: 1/3;
+     }
+    
+
+}
+/* small */
+@media screen and (max-width:350px){
+    
+}

@@ -1,0 +1,128 @@
+/* ================== GOOGLE FONTS ======================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* ======================= VARIABLE CSS ===================== */
+
+:root{
+  --header-height: 3rem;
+
+  /* ================== COLOR ================= */
+  --title: rgba(24, 24, 24, 0.925);
+  --color: #555555;
+  --color-nav: rgb(77, 77, 77);
+  --title-dark:rgb(0, 0, 0);
+  --container-color:#fff;
+  --font-weight-semi:500;
+  --font-medium:800;
+  --z-fixed:100;
+
+  --big-font: 2.4rem;
+  --font-size-link:14px;
+
+  --font-t-992:2rem;
+  --font-st-992:1.2rem;
+  --font-d-992:0.9rem;
+
+  --font-t-768:1.5rem;
+  --font-st-768:1rem;
+  --font-d-768:.8rem;
+
+  --Ah-mr-t-60: 4rem;
+  
+
+}
+body{
+  background-color: rgb(242, 242, 243);
+}
+*{
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+::selection{
+  background-color: var(--title-dark);
+  color: #fff;
+}
+
+h1,h2,h3{
+  color: var(--title);
+  font-weight: var(--font-weight-semi);
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Layouts */
+.container{
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}
+
+
+.section{
+  padding: 6rem 0 2rem;
+}
+
+.section_title{
+  font-size: 1.8rem;
+  color: var(--title);
+  font-weight: 600;
+  text-align: center;
+}
+
+.section_subtitle{
+  display: block;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/* Button */
+.button{
+  display: inline-block;
+  background-color: var(--title);
+  color: var(--container-color);
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  font-weight: var(--font-medium);
+  filter: drop-shadow(0px 0px 1px #272727);
+}
+
+.button:hover{
+  background-color: var(--title-dark);
+}
+
+
+/* responsive */
+
+@media screen and (max-width:992px) {
+  .container{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
